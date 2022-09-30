@@ -1,7 +1,10 @@
 package com.imobile3.groovypayments.ui.main;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.imobile3.groovypayments.R;
 import com.imobile3.groovypayments.logging.LogHelper;
@@ -102,7 +105,22 @@ public class MainDashboardActivity extends BaseActivity {
                 break;
 
             case Placeholder2:
-                throw new RuntimeException("User clicked a Placeholder button");
+                try{
+                    throw new RuntimeException("User clicked a Placeholder button");
+                }
+                catch (RuntimeException e){
+                    final Dialog dialog = new Dialog(MainDashboardActivity.this);
+                    dialog.setContentView(R.layout.dialog);
+                    dialog.show();
+
+                    Button alertButton = (Button) dialog.findViewById(R.id.alertButton);
+                    alertButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
+                }
         }
     }
 

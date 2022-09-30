@@ -119,6 +119,14 @@
     <string name="keypad_00">00</string>
     <string name="keypad_0">0</string>
 
+    <!-- Alert Dialog Strings -->
+    <string name="alert_dialog_message">Esta característica está actualmente en construcción. ¡Gracias!</string>
+    <string name="alert_dialog_title">¡Ups! ¡Bajo construcción!</string>
+    <string name="alert_dialog_confirm">¡De acuerdo!</string>
+
+    <!-- Product List Design -->
+    <string name="product_details">$ %1$d | %2$s</string>
+
     <!-- Progress / Tasks -->
     <string-array name="progress_dialog_messages">
         <item>Analizando los números&#8230;</item>

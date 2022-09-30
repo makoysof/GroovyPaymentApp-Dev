@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Groovy Mobile Payments</string>
+
+    <!-- Common -->
+    <string name="common_ok">OK</string>
+    <string name="common_cancel">Kanselahin</string>
+    <string name="common_back">Bumalik</string>
+    <string name="common_change">Baguhin</string>
+    <string name="common_order_entry">Order Entry</string>
+    <string name="common_management">Pamamahala</string>
+    <string name="common_time_tracking">Pagsubaybay sa Oras</string>
+    <string name="common_under_construction">Ginagawa pa</string>
+    <string name="common_acknowledged">Sige</string>
+    <string name="common_order_history">Mga Nakaraang Order</string>
+    <string name="common_secret_functions">Lihim na Bagay</string>
+    <string name="common_user_profile">Profile ng User</string>
+    <string name="common_lorem_ipsum_description">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="reports">Ulat</string>
+
+    <!-- Login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Mag-Sign in or Rehistro</string>
+    <string name="skip_login">Laktawan ang pag-login</string>
+    <string name="action_sign_in_short">Mag-Sign in</string>
+    <string name="welcome">Maligayang Pagdating</string>
+    <string name="invalid_username">Hindi valid ang username</string>
+    <string name="invalid_password">Ang password ay dapat mas mahaba sa 5 karakter</string>
+    <string name="login_failed">Bigong Pag-login</string>
+
+    <!-- Main Dashboard -->
+    <string name="order_entry_description">I-browse ang imbentaryo ng tindahan o magbenta ng mga produkto sa customer.</string>
+    <string name="user_profile_description">Tignan ang Settings</string>
+    <string name="management_description">Pamahalaan ang iyong mga setting ng point-of-sale</string>
+    <string name="time_tracking_description">Mag-clock in / out at tingnan ang iyong kamakailang aktibidad.</string>
+    <string name="order_history_description">"Tingnan ang mga makasaysayang order na natupad sa Point-of-Sale na ito. "</string>
+    <string name="secret_functions_description">"Super lihim na lugar kung saan maaari kang magsagawa ng mga espesyal na function, tulad ng pag-reset ng Demo Database. "</string>
+    <string name="placeholder_description">"Ito ay isang pansamantalang placeholder. "</string>
+    <string name="under_construction_alert_message">"Ang lugar na ito ng aplikasyon ay ginagawa pa rin. Huwag mag-atubiling ipakita ang iyong mga kakayahan at buuin ito. "</string>
+    <string name="main_dashboard_subtitle">"Saan mo gustong pumunta? "</string>
+    <string name="reports_description">"Tingnan ang chart ng katanyagan ng mga produkto batay sa pang-araw-araw na ulat. "</string>
+
+    <!-- User Profile -->
+    <string name="user_profile_subtitle_format">" Maligayang pagdating %1$s."</string>
+    <string name="user_profile_username">Username</string>
+    <string name="user_profile_email">Email</string>
+    <string name="user_profile_hours_week">Oras (Linggo):</string>
+
+    <!-- Secret Functions -->
+    <string name="secret_functions_subtitle">Lihim na lugar</string>
+    <string name="secret_functions_reset_database">I-reset and Database</string>
+    <string name="secret_functions_erase_cart">Burahin ang laman ng Kart</string>
+    <string name="secret_functions_alert_title">Naisasakatuparan ang function</string>
+    <string name="secret_functions_alert_button">Kopya</string>
+    <string name="secret_functions_alert_reset_database">Ang Demo Database ay matagumpay na na-reset (lahat ng orihinal na Demo data ay naibalik). Ang mensaheng ito ay masisira sa sarili.</string>
+    <string name="secret_functions_alert_erase_cart">"Ang iyong kasalukuyang instance ng Cart ay nabura. Ito ay halos parang ang iyong Cart ay hindi kailanman umiral&#8230; "</string>
+
+    <!-- Order Entry -->
+    <string name="order_entry_subtitle">"Magdagdag ng mga produkto sa order. "</string>
+    <string name="order_entry_subtitle_checkout">"I-click ang icon sa kanang tuktok upang mag-checkout. "</string>
+
+    <!-- Order History -->
+    <string name="order_history_subtitle">"Mga kamakailang order na nakalista sa ibaba. "</string>
+    <string name="order_history_alert_title">"Hindi Naipatupad "</string>
+    <string name="order_history_alert_button">Sige</string>
+    <string name="order_history_alert_message">"Hindi ipinatupad ang pagpapagana ng Kasaysayan ng Order. Mangyaring ihinto ang pag-click sa mga item sa listahan. "</string>
+    <string name="order_history_alert_warning_title">"Itigil mo yan "</string>
+    <string name="order_history_alert_warning_button">Ewan ko sayo</string>
+    <string name="order_history_alert_warning_message">"Binalaan ka na huwag i-click ang mga item sa listahan. Naabisuhan ang mga administrator. "</string>
+
+    <!--Daily Report-->
+    <string name="daily_report_subtitle">"Pang-araw-araw na Ulat "</string>
+    <string name="daily_report_product_popularity">"Popularidad ng Produkto "</string>
+    <string name="daily_report_progress_message">"Naglo-load ng tsart "</string>
+
+    <!-- Checkout -->
+    <string name="checkout_subtitle">"Paano ka magbabayad? "</string>
+    <string name="checkout_with_cash">"Gamit ang Cash "</string>
+    <string name="checkout_with_credit">Gamit ang Credit</string>
+    <string name="checkout_pay_cash">"Magbayad (Cash) "</string>
+    <string name="checkout_pay_credit">Magbayad (Credit)</string>
+    <string name="checkout_complete_title_message">"Binabati kita! Naaprubahan ang iyong pagbabayad! "</string>
+    <string name="checkout_complete_subtitle">"Kumpleto na ang Order! "</string>
+    <string name="checkout_complete_customer_message">"Salamat sa pamimili sa amin - i-click ang button sa ibaba upang bumalik sa screen ng Order Entry. "</string>
+    <string name="checkout_complete_groovy">Groovy!</string>
+
+    <!-- Payment Types -->
+    <string name="credit">Credit</string>
+    <string name="cash">Pera</string>
+
+    <!-- Keypad -->
+    <string name="keypad_1">1</string>
+    <string name="keypad_2">2</string>
+    <string name="keypad_3">3</string>
+    <string name="keypad_4">4</string>
+    <string name="keypad_5">5</string>
+    <string name="keypad_6">6</string>
+    <string name="keypad_7">7</string>
+    <string name="keypad_8">8</string>
+    <string name="keypad_9">9</string>
+    <string name="keypad_00">00</string>
+    <string name="keypad_0">0</string>
+
+    <!--Task001-->
+    <string name="alert_dialog_message">"Kasalukuyang ginagawa ang feature na ito. Salamat! "</string>
+    <string name="alert_dialog_title">"Oops! Kasalukuyang ginagawa ang feature na ito. Salamat! "</string>
+    <string name="alert_dialog_confirm">Okay!</string>
+
+    <!-- Product List Design -->
+    <string name="product_details">$ %1$d | %2$s</string>
+
+    <!-- Progress / Tasks -->
+    <string-array name="progress_dialog_messages">
+        <item>Crunching numbers&#8230;</item>
+        <item>Pagsusuri ng Data&#8230;</item>
+        <item>Pagsusuri ng mga Halaga&#8230;</item>
+        <item>Pagpapatakbo ng mga algorithm&#8230;</item>
+        <item>Pagsusuri sa mga Bangko&#8230;</item>
+        <item>Paggamit ng Machine Learning&#8230;</item>
+        <item>Nagbibilang ng beans&#8230;</item>
+    </string-array>
+</resources>

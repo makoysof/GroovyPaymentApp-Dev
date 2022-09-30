@@ -32,21 +32,16 @@
     <string name="login_failed">"Login failed"</string>
 
     <!-- Main Dashboard -->
-    <string name="order_entry_description">Browse the store inventory or sell products to the
-        customer.</string>
+    <string name="order_entry_description">Browse the store inventory or sell products to the         customer.</string>
     <string name="user_profile_description">View or edit your current user settings.</string>
     <string name="management_description">Manage your Point-of-Sale settings.</string>
     <string name="time_tracking_description">Clock in / out and view your recent activity.</string>
-    <string name="order_history_description">Take a look at historical orders fulfilled on this
-        Point-of-Sale.</string>
-    <string name="secret_functions_description">Super secret area where you can perform special
-        functions, like resetting the Demo Database.</string>
+    <string name="order_history_description">Take a look at historical orders fulfilled on this         Point-of-Sale.</string>
+    <string name="secret_functions_description">Super secret area where you can perform special         functions, like resetting the Demo Database.</string>
     <string name="placeholder_description">This is a temporary placeholder.</string>
-    <string name="under_construction_alert_message">This area of the application is still
-        under construction. Feel free to demonstrate your skills and build it.</string>
+    <string name="under_construction_alert_message">This area of the application is still         under construction. Feel free to demonstrate your skills and build it.</string>
     <string name="main_dashboard_subtitle">Where would you like to go?</string>
-    <string name="reports_description">View products popularity chart based on daily
-        report.</string>
+    <string name="reports_description">View products popularity chart based on daily         report.</string>
 
     <!-- User Profile -->
     <string name="user_profile_subtitle_format">Welcome %1$s.</string>
@@ -60,10 +55,8 @@
     <string name="secret_functions_erase_cart">Erase Cart</string>
     <string name="secret_functions_alert_title">Function Executed</string>
     <string name="secret_functions_alert_button">Copy that.</string>
-    <string name="secret_functions_alert_reset_database">Demo Database successfully reset
-        (all original Demo data has been restored). This message will self-destruct.</string>
-    <string name="secret_functions_alert_erase_cart">Your current Cart instance has been erase.
-        It\'s almost as if your Cart never existed&#8230;</string>
+    <string name="secret_functions_alert_reset_database">Demo Database successfully reset         (all original Demo data has been restored). This message will self-destruct.</string>
+    <string name="secret_functions_alert_erase_cart">Your current Cart instance has been erase.         It\'s almost as if your Cart never existed&#8230;</string>
 
     <!-- Order Entry -->
     <string name="order_entry_subtitle">Add products to the order.</string>
@@ -73,12 +66,10 @@
     <string name="order_history_subtitle">Recent orders listed below.</string>
     <string name="order_history_alert_title">Not Implemented</string>
     <string name="order_history_alert_button">Sure.</string>
-    <string name="order_history_alert_message">Order History functionality not implemented.
-        Please stop clicking on the list items.</string>
+    <string name="order_history_alert_message">Order History functionality not implemented.         Please stop clicking on the list items.</string>
     <string name="order_history_alert_warning_title">Stop it</string>
     <string name="order_history_alert_warning_button">Whatever.</string>
-    <string name="order_history_alert_warning_message">You were warned not to click the list items.
-        Administrators have been notified.</string>
+    <string name="order_history_alert_warning_message">You were warned not to click the list items.         Administrators have been notified.</string>
 
     <!--Daily Report-->
     <string name="daily_report_subtitle">Daily Report</string>
@@ -91,11 +82,9 @@
     <string name="checkout_with_credit">With Credit</string>
     <string name="checkout_pay_cash">Pay (Cash)</string>
     <string name="checkout_pay_credit">Pay (Credit)</string>
-    <string name="checkout_complete_title_message">Congratulations! Your payment was
-        approved!</string>
+    <string name="checkout_complete_title_message">Congratulations! Your payment was         approved!</string>
     <string name="checkout_complete_subtitle">Order Complete!</string>
-    <string name="checkout_complete_customer_message">Thanks for shopping with us - click the
-        button below to return to the Order Entry screen.</string>
+    <string name="checkout_complete_customer_message">Thanks for shopping with us - click the         button below to return to the Order Entry screen.</string>
     <string name="checkout_complete_groovy">Groovy!</string>
 
     <!-- Payment Types -->
@@ -114,6 +103,14 @@
     <string name="keypad_9">9</string>
     <string name="keypad_00">00</string>
     <string name="keypad_0">0</string>
+
+    <!--Task001-->
+    <string name="alert_dialog_message">This feature is currently in construction. Thank you!</string>
+    <string name="alert_dialog_title">Oops! Under Construction!</string>
+    <string name="alert_dialog_confirm">Okay!</string>
+
+    <!-- Product List Design -->
+    <string name="product_details">$ %1$d | %2$s</string>
 
     <!-- Progress / Tasks -->
     <string-array name="progress_dialog_messages">

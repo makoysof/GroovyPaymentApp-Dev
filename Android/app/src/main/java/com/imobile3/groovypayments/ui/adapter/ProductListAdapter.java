@@ -1,16 +1,22 @@
 package com.imobile3.groovypayments.ui.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.imobile3.groovypayments.R;
+import com.imobile3.groovypayments.data.enums.GroovyColor;
+import com.imobile3.groovypayments.data.enums.GroovyIcon;
 import com.imobile3.groovypayments.data.model.Product;
 import com.imobile3.groovypayments.utils.StateListHelper;
 
 import org.jetbrains.annotations.NotNull;
+import org.w3c.dom.Text;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -55,6 +61,9 @@ public class ProductListAdapter
         holder.label.setText(item.getName());
         holder.label.setTextColor(
                 StateListHelper.getTextColorSelector(mContext, R.color.black_space));
+        holder.details.setText(mContext.getString(R.string.product_details,item.getUnitPrice(), item.getNote()));
+        holder.icon.setImageResource(GroovyIcon.fromId(item.getIconId()).drawableRes);
+        holder.icon.setBackgroundColor(mContext.getResources().getColor(GroovyColor.fromId(item.getColorId()).colorRes));
     }
 
     @Override
@@ -65,12 +74,17 @@ public class ProductListAdapter
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ViewGroup container;
         TextView label;
+        TextView details;
+        ImageView icon;
 
         ViewHolder(View itemView) {
             super(itemView);
             container = itemView.findViewById(R.id.container);
             label = itemView.findViewById(R.id.label);
+            details = itemView.findViewById(R.id.details);
+            icon = itemView.findViewById(R.id.icon);
             container.setOnClickListener(this);
+
         }
 
         @Override
