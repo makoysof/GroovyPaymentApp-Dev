@@ -120,4 +120,6 @@
         <item>Paggamit ng Machine Learning&#8230;</item>
         <item>Nagbibilang ng beans&#8230;</item>
     </string-array>
+
+    <string name="management_subtitle">Pumili ng lenguwahe</string>
 </resources>

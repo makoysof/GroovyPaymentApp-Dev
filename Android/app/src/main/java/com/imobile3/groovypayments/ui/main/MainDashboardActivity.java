@@ -12,6 +12,7 @@ import com.imobile3.groovypayments.ui.BaseActivity;
 import com.imobile3.groovypayments.ui.adapter.MainDashboardButton;
 import com.imobile3.groovypayments.ui.adapter.MainDashboardButtonAdapter;
 import com.imobile3.groovypayments.ui.chart.PieChartActivity;
+import com.imobile3.groovypayments.ui.management.ManagementAreaActivity;
 import com.imobile3.groovypayments.ui.misc.SecretFunctionsActivity;
 import com.imobile3.groovypayments.ui.orderentry.OrderEntryActivity;
 import com.imobile3.groovypayments.ui.orderhistory.OrderHistoryActivity;
@@ -93,7 +94,7 @@ public class MainDashboardActivity extends BaseActivity {
                 break;
 
             case Management:
-                LogHelper.writeWithTrace(Level.INFO, TAG, "Management area not implemented");
+                startActivity(new Intent(this, ManagementAreaActivity.class));
                 break;
 
             case TimeTracking:

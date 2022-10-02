@@ -1,5 +1,6 @@
 package com.imobile3.groovypayments.ui;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.view.View;
 import com.imobile3.groovypayments.R;
 import com.imobile3.groovypayments.logging.LogHelper;
 import com.imobile3.groovypayments.ui.dialog.CommonAlertDialog;
+import com.imobile3.groovypayments.ui.management.LocalHelper;
 
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
@@ -192,4 +194,5 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     //endregion
+
 }

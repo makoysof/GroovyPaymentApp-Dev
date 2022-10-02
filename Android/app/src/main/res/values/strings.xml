@@ -111,6 +111,12 @@
 
     <!-- Product List Design -->
     <string name="product_details">$ %1$d | %2$s</string>
+    <string name="management_subtitle">Choose a language</string>
+
+
+    <!-- Cart History -->
+    <string name="grand_total">$ %1$d</string>
+    <string name="date_time">%1$s @ %2$s</string>
 
     <!-- Progress / Tasks -->
     <string-array name="progress_dialog_messages">

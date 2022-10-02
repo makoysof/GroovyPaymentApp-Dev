@@ -17,11 +17,13 @@
 package com.imobile3.groovypayments;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.imobile3.groovypayments.data.DatabaseHelper;
 import com.imobile3.groovypayments.logging.LogHelper;
 import com.imobile3.groovypayments.manager.ApiKeyManager;
 import com.imobile3.groovypayments.network.WebServiceConfig;
+import com.imobile3.groovypayments.ui.management.LocalHelper;
 import com.stripe.android.BuildConfig;
 
 import androidx.annotation.NonNull;
@@ -63,5 +65,10 @@ public class MainApplication extends Application {
                 .setSecretApiKey(ApiKeyManager.getInstance().getStripeApiServerKey())
                 .setAppName(getString(R.string.app_name))
                 .setAppVersion(BuildConfig.VERSION_NAME);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocalHelper.onAttach(base, "en"));
     }
 }
