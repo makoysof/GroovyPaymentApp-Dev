@@ -25,7 +25,9 @@ import com.imobile3.groovypayments.data.model.Product;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
+import java.util.Currency;
 import java.util.Locale;
 import java.util.Objects;
 
@@ -79,6 +81,11 @@ public final class CartRules {
         return dateFormat.format(mCart.getDateCreated());
     }
 
+    public String getFormmattedDate(){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy @ h:mm a");
+        return dateFormat.format(mCart.getDateCreated());
+    }
+
     public String getOrderHistoryDescription() {
         StringBuilder builder = new StringBuilder();
         if (mCart.getProducts() != null) {
@@ -90,5 +97,10 @@ public final class CartRules {
             }
         }
         return builder.toString();
+    }
+
+    public String getTotal(){
+        BigDecimal totalPrice = new BigDecimal(mCart.getGrandTotal()).movePointLeft(2);
+        return "$" + totalPrice;
     }
 }

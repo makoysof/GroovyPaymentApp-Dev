@@ -24,6 +24,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class CartListAdapter
         extends RecyclerView.Adapter<CartListAdapter.ViewHolder> {
@@ -58,8 +59,7 @@ public class CartListAdapter
     public void onBindViewHolder(ViewHolder holder, int position) {
         Cart item = mItems.get(position);
         CartRules rules = new CartRules(item);
-        SimpleDateFormat simpleDate = new SimpleDateFormat("MM.dd.yyyy");
-        SimpleDateFormat simpleTime = new SimpleDateFormat("HH:mm:ss");
+
         // Configure the icon and background circle.
         holder.icon.setImageResource(GroovyIcon.Bookmarklet.drawableRes);
         holder.icon.setBackground(
@@ -69,8 +69,8 @@ public class CartListAdapter
                 StateListHelper.getTextColorSelector(mContext, R.color.gray_down_pour));
 
         //added to display grand total and date/time
-        holder.labelTotal.setText(mContext.getString(R.string.grand_total,item.getGrandTotal()));
-        holder.labelDate.setText(mContext.getString(R.string.date_time,simpleDate.format(item.getDateCreated()),simpleTime.format(item.getDateCreated())));
+        holder.labelTotal.setText(rules.getTotal());
+        holder.labelDate.setText(rules.getFormattedDate(Locale.getDefault()));
     }
 
     @Override

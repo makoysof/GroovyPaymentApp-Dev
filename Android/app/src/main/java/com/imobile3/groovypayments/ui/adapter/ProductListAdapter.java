@@ -13,6 +13,7 @@ import com.imobile3.groovypayments.R;
 import com.imobile3.groovypayments.data.enums.GroovyColor;
 import com.imobile3.groovypayments.data.enums.GroovyIcon;
 import com.imobile3.groovypayments.data.model.Product;
+import com.imobile3.groovypayments.rules.ProductRules;
 import com.imobile3.groovypayments.utils.StateListHelper;
 
 import org.jetbrains.annotations.NotNull;
@@ -57,11 +58,11 @@ public class ProductListAdapter
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Product item = mItems.get(position);
-
+        ProductRules products = new ProductRules(item);
         holder.label.setText(item.getName());
         holder.label.setTextColor(
                 StateListHelper.getTextColorSelector(mContext, R.color.black_space));
-        holder.details.setText(mContext.getString(R.string.product_details,item.getUnitPrice(), item.getNote()));
+        holder.details.setText(mContext.getString(R.string.details_price,products.getDescription()));
         holder.icon.setImageResource(GroovyIcon.fromId(item.getIconId()).drawableRes);
         holder.icon.setBackgroundColor(mContext.getResources().getColor(GroovyColor.fromId(item.getColorId()).colorRes));
     }

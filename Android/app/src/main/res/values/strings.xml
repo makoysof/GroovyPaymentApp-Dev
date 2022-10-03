@@ -110,7 +110,7 @@
     <string name="alert_dialog_confirm">Okay!</string>
 
     <!-- Product List Design -->
-    <string name="product_details">$ %1$d | %2$s</string>
+    <string name="details_price">$ %1$s</string>
     <string name="management_subtitle">Choose a language</string>
 
 

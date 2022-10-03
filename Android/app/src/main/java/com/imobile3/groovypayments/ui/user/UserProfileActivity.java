@@ -7,7 +7,7 @@ import com.imobile3.groovypayments.R;
 import com.imobile3.groovypayments.ui.BaseActivity;
 
 public class UserProfileActivity extends BaseActivity {
-
+    TextView lblUsername,lblEmail,lblHoursWeek;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +15,14 @@ public class UserProfileActivity extends BaseActivity {
 
         setUpMainNavBar();
         setUpViews();
+
+        displayDetails();
+    }
+
+    private void displayDetails() {
+        //lblUsername.setText();
+        //lblEmail.setText();
+        //lblHoursWeek.setText();
     }
 
     @Override
@@ -36,8 +44,8 @@ public class UserProfileActivity extends BaseActivity {
     }
 
     private void setUpViews() {
-        TextView lblUsername = findViewById(R.id.label_username);
-        TextView lblEmail = findViewById(R.id.label_email);
-        TextView lblHoursWeek = findViewById(R.id.label_hours_week);
+        lblUsername = findViewById(R.id.label_username);
+        lblEmail = findViewById(R.id.label_email);
+        lblHoursWeek = findViewById(R.id.label_hours_week);
     }
 }
