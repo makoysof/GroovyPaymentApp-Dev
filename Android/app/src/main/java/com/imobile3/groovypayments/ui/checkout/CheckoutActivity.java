@@ -298,10 +298,7 @@ public class CheckoutActivity extends BaseActivity {
     }
 
     private void handlePayWithCashClick() {
-        showAlertDialog(
-                R.string.common_under_construction,
-                R.string.under_construction_alert_message,
-                R.string.common_acknowledged);
+        startActivity(new Intent(this, CheckoutCompleteActivity.class));
     }
 
     //region (Animated) View Transitions

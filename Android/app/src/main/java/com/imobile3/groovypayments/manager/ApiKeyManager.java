@@ -60,7 +60,7 @@ public class ApiKeyManager {
             return BuildConfig.STRIPE_API_CLIENT_KEY;
         } else {
             // TODO: Implement API Keys for release builds.
-            return null;
+            return BuildConfig.STRIPE_API_CLIENT_KEY;
         }
     }
 
@@ -78,7 +78,7 @@ public class ApiKeyManager {
             return BuildConfig.STRIPE_API_SERVER_KEY;
         } else {
             // TODO: Implement API Keys for release builds.
-            return null;
+            return BuildConfig.STRIPE_API_SERVER_KEY;
         }
     }
 }
