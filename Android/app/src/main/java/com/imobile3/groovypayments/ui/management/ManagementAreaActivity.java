@@ -1,18 +1,18 @@
 package com.imobile3.groovypayments.ui.management;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.cardview.widget.CardView;
 
 import com.imobile3.groovypayments.R;
 import com.imobile3.groovypayments.ui.BaseActivity;
-import com.imobile3.groovypayments.ui.MainNavBar;
+
+/* This is supposed to be the activity to change language from english to
+*  other specified language. However, I was not able to finish the task
+*  that allows the user to change language at runtime */
 
 public class ManagementAreaActivity extends BaseActivity{
 

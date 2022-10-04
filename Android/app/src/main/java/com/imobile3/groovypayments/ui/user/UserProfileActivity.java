@@ -16,13 +16,6 @@ public class UserProfileActivity extends BaseActivity {
         setUpMainNavBar();
         setUpViews();
 
-        displayDetails();
-    }
-
-    private void displayDetails() {
-        //lblUsername.setText();
-        //lblEmail.setText();
-        //lblHoursWeek.setText();
     }
 
     @Override

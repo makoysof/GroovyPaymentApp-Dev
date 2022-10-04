@@ -10,6 +10,9 @@ import android.preference.PreferenceManager;
 
 import java.util.Locale;
 
+/* This is the LocaleHelper class that should handle the language change
+*  but I don't have enough time to make it work. */
+
 public class LocalHelper {
     private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
 
